@@ -1,0 +1,13 @@
+mongo:
+  servers: localhost
+  name: wildling
+  port: 27017
+static:
+  absolute_path: /tmpfile
+  relative_path: /static
+memcached:
+  servers: localhost:11211
+http:
+  port: 8000
+json:
+  port: 8001
