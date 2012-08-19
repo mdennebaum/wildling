@@ -7,8 +7,8 @@ import(
 
 func init(){
 	index := new(IndexController)
-	index.HTMLController.HandleMethod("GET",index.Get())
-	
+	index.HandleMethod("GET",index.Get())
+//	index.Layout = 
 	//make sure this path is authenticated. 
 	//pick up the global auth mechanism configured in our bootstrap
 	//index.BaseController.AuthRequired()
@@ -25,6 +25,6 @@ type IndexController struct{
 
 func (this *IndexController)Get()func(){
 	return func(){
-		this.Write("oh baby baby your a wildling")
+		this.Write("oh baby baby your a wildling...yah")
 	}
 }
