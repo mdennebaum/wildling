@@ -1,7 +1,7 @@
 package mongodb
 
 import (
-	"launchpad.net/mgo"
+	"labix.org/v2/mgo"
 )
 
 type mongoDB struct{
