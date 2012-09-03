@@ -16,6 +16,6 @@ type HelloAPIController struct{
 
 func (this *HelloAPIController)Get()func(){
 	return func(){
-		this.Write("ohai werldz test")
+		this.Write(this.NewSuccessJson("oh baby baby your a wildling"))
 	}
 }
