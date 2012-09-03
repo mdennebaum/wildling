@@ -1,10 +1,11 @@
+app:
+  path: /path/to/the/app/dir
+  static_path: /path/to/the/app/dir/static
+  static_route: /static/
 mongo:
   servers: localhost
   name: wildling
   port: 27017
-static:
-  absolute_path: /tmpfile
-  relative_path: /static
 memcached:
   servers: localhost:11211
 http:
