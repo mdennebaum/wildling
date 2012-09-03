@@ -1,43 +1,81 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
-
-/* THANKS */
-  Names (& URL):
+Matt Dennebaum
+Site: kippleheap.com
+Twitter: @kippleheap
+Location: CT/NYC
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+Standards: HTML5, CSS3
+Components: YepNope, jQuery, Bootstrap, Backbone, Mustache, Mongodb
+Software: Cheshire (https://github.com/mdennebaum/cheshire)
 
-
-
-                               -o/-
-                               +oo//-
-                              :ooo+//:
-                             -ooooo///-
-                             /oooooo//:
-                            :ooooooo+//-
-                           -+oooooooo///-
-           -://////////////+oooooooooo++////////////::
-            :+ooooooooooooooooooooooooooooooooooooo+:::-
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-
-                     -:+ooooooooooooooooo+:://////:--
-                       /ooooooooooooooooo+//////:-
-                      -ooooooooooooooooooo////-
-                      /ooooooooo+oooooooooo//:
-                     :ooooooo+/::/+oooooooo+//-
-                    -oooooo/::///////+oooooo///-
-                    /ooo+::://////:---:/+oooo//:
-                   -o+/::///////:-      -:/+o+//-
-                   :-:///////:-            -:/://
-                     -////:-                 --//:
-                       --                       -:
+           ,                                                ,,cc,
+          cs,                                              ,TRRRRs,
+       ,sARRRRRRa,                                     ,cARRRRRRRT,
+       ,TRRRRRRRRsc,,,                              ,,,sTRRRRRRRRT,
+       ,TRRRRRRRRRRRRc  ,,,,,, ,,,,,,,, ,,,,,,,,,,, ,RRRRRRRRRATTT,
+       ,TTCCTRRRRRRRRRRRTc   ,,,,  ,,, , ,,,,,  ,,CRRRRRRRRRAsssTT,
+       ,TTssCTRRRRRRRRRRRRAc, ,    ,, ,    ,,   cARRRRRRRRRTac,cTAc
+       ,TAsccsCTARRRRRRRRRRT, , ,   ,,   , ,    sRRRRRRRRACs,,,,ss,
+       ,ARscccssTARRRRRRAACc,,,,,,   , , , ,,   ,caTARRRATsc,,,,,
+       cRRac,,,csCTRRATsccc,,,,,     ,  ,,      ,,,,csTTCs,, ,CC,
+        ,casc ,,,saCCsccc,,,,,,,,           ,    ,,,,ccc,,  ,,,,
+          aTc,,,ccsssscc,,,,,,,,,,,, ,      ,    ,,,,,c,,, ,c,
+         ,TAs,,,csssscc,,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,ccccsTa,
+          cssscccsssscc,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,cccccc,
+            ,ccssssssccc,,,,,,,,c,,,,,,,,,,,,,,,,,,,,,ccccc,
+             ,csssscccccccc,,,,,,,,,c,,,,,,,,,,,ccccccccccc,,
+            ,ssscsccccccccc,,,,,,,,,,,,,,,,,,,,ccsssccc,,,ccc,
+          csscccccccccccc,sRRRRRac,,,,,,,,,,,cARRRARRRsccc,cccsc
+       ,caCascc,,,,cccccTRRAcCRRRRc,,,,,,,,,cTTaaARRRRAsc,,,,cas,
+       ,TACscc,,,,,cccccARRT ,ARRRs,,,,,,, ,cTa,cARRRRTsc,,,,css,
+       ,TACscc,,,,,,,,,,,,sRRRRRRR,   ,       sRRRRRTc,,,,cc,cccccss,
+      csCCsscccccccccc,,, ,CRTcsTs,           ,aTATsc,,,ccc,,,,cccss,
+   ,caAACsssccccccccccc,,,cc,,       ,,ccc,,       ,cc,ccccccccc,,,,
+   ,sassCTasssssscccccccccsssc,,,,   ,csssc,,,,,,,,sassscccccsCs,
+       ,CTCassaassssscccccc,,,,,,,,,,,,,,c,,,,,,,,,caTTTaasasaTC,
+       ,TRAATTTCCCaaasssssscsccccc,,ccccccc,cccccc,ccssCCc
+       ,aTTTaaTATTTCaCaaassasssccccccccsscccccccccccccccc,
+              cTATTAATTTTTTCCassssccccssssscccsccssas,
+                  cARAARRRRRATTCTCCsasaaasCCCCCTAAT,
+                 ,cCTCCCTCTARRAAATTTTTTATTAAa,,,ccc
+               ,cscccccccccsTCCCCCCCCCCCCCTTc
+              ,ccccccccsscccccccccccsccccccccccc,
+            ,c,,,,,cccssscccccccccc,cccccccccccc,
+          csc,,c,,,,csssssccc,,,,,,,,,,,,,,,cccccc,
+         ,aCc,,c,,,,,sssssccc,,,,,,,,,,,,,,,,ccccc,
+          aTasc,,,,cccssascc,,,,,,,,,,,,,,,,,ccccc,
+          CAac,,,,sTTCaasscc,,,,,,,,,,,,,,,,,cccc,,
+          ,c,csTc cARACsscc,,, ,,,,,,,,,,,,,,cc,,,,
+            cCCs, ,TACascc,,,, ,,, , ,,,, ,,,,,,,,,,,
+            CAc   ,TTCsscc,,,,, ,,, , ,,,,,,,cc,,,,,,
+                  ,CTasccc,,, ,,,,,,, , ,,,,cCscc,,,,,
+                 ,cCCsscc,,, ,,,,,,,,, ,   ,cTTscc,,,,,
+                cAACssccc,,  ,,,,,,,,,,,   ,cCTAATTs,,,
+                cTTassc,,,,,,,,,,,,,,,,,,,,,,,cCARRTc,,
+                cTTssccc,,,,,,,,,,,,,,,,,,,,,,,,ccsscc,
+                cTTsscc,,,,,,,,,,,,,,,, ,,,,,c,    cac,
+                cTCscc,,,, ,,,,,,,,,,,,,,,,,,c,    ,ccc,
+                ,TTsccc,,,,,,,,,,,,,, ,,,,,,,c,      cs,
+              sTATasccc,,,,,,,,,,,,,,,,,,,,,,c,
+              sRATasscc,,,,,,,,,,,,,,,,,,,,,,c,,
+              sATCsccc,,,,cc,cccccscccccc,, ,,,sc
+              sTTssc,,,,,,cccsCTTTCCsscc,,,  ,,cc,
+              cTTscc,,,,,,cccaAAAATCascc,,, ,,,,caCCCTTc
+          csssCTasc,,,,,,,,ccCRRRATCsscc,,,, ,,,csTRRC,
+         ,TRRRACacc,, ,,,,,ccCARAATCsscc,,,,, ,,,,sTAc
+ sRRRRRAAARRATTasc,,,,,,,,,ccCARAATCsccc,,,   ,,ccsTRRARRRRT,
+   cARAAAARATTCssc,, ,,,,,,csCARRRRTsccc,,,,,  ,,,sARRRs
+  ,sRRRRRAAATTCscc,,,,,,,,cccCARRRRACsccc,,,, ,,,ccsCTC,
+ sAATRRRRATTTCssc,,,,,,,,ccccTRRAAAAATCasscc,,,,,c,
+  ,, sRRRATTCascc,,,,,,,,,ccsARRAAAAATTaasscc,, ,c,
+      ,sRRACascc,,,,,,,,,,c,cTRRRATTTaasssccc,,,,,cCC,
+        ,sCTCsc,, ,,,,,,cccccaARAAATCasccccc,,,,,,,cc,
+          sTCsc,,,,,,,,,ccccsCARARAATascccc,,,,,,,,
+         ,TRTcc,,,,,,,c,ccsTRRRRRRRRRACccccc,,,,,,,
+         ,ARCcc,,,,,,,,,csTasssTAAsaARATCaaasasas,
+          sCCaassssssssssTa,        cCCCCTCCCTTTs
+            aRRRRRRRRRRRT,
