@@ -12,6 +12,8 @@ go get labix.org/v2/mgo
 go get github.com/mdennebaum/cheshire
 ```
 
+Then clone/download a copy of the repo
+
 ##Config
 
 Edit the config/config.yaml file to match with your settings. Please note: the config folder must be in the same directory as your executable. In the future you will be able to pass in a config file as a flag when starting the app but for now we will just rely on convention. 
