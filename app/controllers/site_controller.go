@@ -6,6 +6,7 @@ import(
 
 func init(){
 	hellohtml := new(HelloHTMLController)
+	hellohtml.Layout = "/layouts/base.html"
 	hellohtml.HandleMethod("GET",hellohtml.Get())
 	hellohtml.Route("/", hellohtml)
 }
@@ -15,7 +16,8 @@ type HelloHTMLController struct{
 }
 
 func (this *HelloHTMLController)Get()func(){
-	return func(){
-		this.Write("oh baby baby your a wildling...")
+	return func() {
+		this.ContextVar("test", "a test view var")
+		this.RenderTemplate("/public/index.html")
 	}
 }
