@@ -2,6 +2,7 @@ app:
   path: /path/to/the/app/dir
   static_path: /path/to/the/app/dir/static
   static_route: /static/
+  gzip: true
 mongo:
   servers: localhost
   name: wildling
