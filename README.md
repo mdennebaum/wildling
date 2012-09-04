@@ -16,15 +16,21 @@ Then clone/download a copy of the repo
 
 ##Config
 
-Edit the config/config.yaml file to match with your settings. Please note: the config folder must be in the same directory as your executable. In the future you will be able to pass in a config file as a flag when starting the app but for now we will just rely on convention. 
+Edit the config/config.yaml file to match with your settings.
 
 ##Run
 
 Once you've edited the config.yaml to your liking run the following. 
 
 ```
+go run wildling.go -config=/path/to/config.yaml
+```
+
+Alternatively if your config folder is located in the same dir as the executable you can omit the -config flag
+
+```
 go run wildling.go
-``` 
+```
 
 Then you should be able to point your browser at http://localhost:8000/ and http://localhost:8000/api to see examples of html controller output and api controller output. 
 
