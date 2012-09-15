@@ -3,10 +3,6 @@ app:
   static_path: /path/to/the/app/dir/static
   static_route: /static/
   gzip: true
-mongo:
-  servers: localhost
-  name: wildling
-  port: 27017
 memcached:
   servers: localhost:11211
 http:

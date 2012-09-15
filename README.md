@@ -8,7 +8,6 @@ To get started make sure you have the following installed
 go get github.com/bradfitz/gomemcache/memcache
 go get github.com/kylelemons/go-gypsy/yaml
 go get github.com/hoisie/mustache
-go get labix.org/v2/mgo
 go get github.com/mdennebaum/cheshire
 ```
 
