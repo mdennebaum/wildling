@@ -1,32 +1,22 @@
 package controllers
 
 import(
-	// "github.com/trendrr/cheshire-golang/cheshire"
+	"github.com/trendrr/cheshire-golang/cheshire"
+    "github.com/trendrr/cheshire-golang/strest"
 	"log"
 )
 
 
 func init(){
-    log.Println("init2")
-
-	// helloapi := new(HelloAPIController)
-	// helloapi.HandleMethod("GET",helloapi.Get())
-	// helloapi.Route("/api",helloapi)
+    cheshire.RegisterHtml("/index", "GET", Index)
 }
-// func init(){
-// 	hellohtml := new(HelloHTMLController)
-// 	hellohtml.Layout = "/layouts/base.html"
-// 	hellohtml.HandleMethod("GET",hellohtml.Get())
-// 	hellohtml.Route("/", hellohtml)
-// }
 
-// type HelloHTMLController struct{
-// 	cheshire.HTMLController
-// }
+//an example html page
+func Index(request *strest.Request, conn *cheshire.HtmlConnection) {
+    //create a context map to be passed to the template
+    context := make(map[string]interface{}) 
+    context["content"] = "Welcome to the wild(ing)!"
 
-// func (this *HelloHTMLController)Get()func(){
-// 	return func() {
-// 		this.ContextVar("test", "a test view var")
-// 		this.RenderTemplate("/public/index.html")
-// 	}
-// }
+    //TODO: need to use index.html
+    conn.Render("/layouts/base.html", context)
+}
