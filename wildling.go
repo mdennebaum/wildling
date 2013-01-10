@@ -5,6 +5,7 @@ import (
 	"flag"
 	"os"
 	"fmt"
+	"./app/controllers"
 )
 
 func init(){
@@ -29,9 +30,16 @@ func main() {
 		config = fmt.Sprintf("%s/config/config.yaml", app_path)
 	}
 	bootstrap := cheshire.NewBootstrapFile(config)
+	controllers.Load() //this is mandatory 
+	
+	
 	log.Println(bootstrap)
 	//tell everyone we started up
 	log.Println("starting app with config="+config)
+
+	log.Println("Starting")
+    //starts listening on all configured interfaces
+    bootstrap.Start()
 }
 
 /*
