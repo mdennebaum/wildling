@@ -3,7 +3,6 @@ package controllers
 import(
 	"github.com/trendrr/cheshire-golang/cheshire"
     "github.com/trendrr/cheshire-golang/strest"
-	"log"
 )
 
 
