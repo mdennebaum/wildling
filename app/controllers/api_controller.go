@@ -1,21 +1,34 @@
 package controllers
 
 import(
-	"github.com/mdennebaum/cheshire"
+	"github.com/trendrr/cheshire-golang/cheshire"
+    "github.com/trendrr/cheshire-golang/strest"    
+    "time"
 )
 
-func init(){
-	helloapi := new(HelloAPIController)
-	helloapi.HandleMethod("GET",helloapi.Get())
-	helloapi.Route("/api",helloapi)
+// init function. use for registering controllers
+func init(){ 
+    //register the ping controller.
+    cheshire.RegisterApi("/ping", "GET", Ping)
+    cheshire.RegisterApi("/firehose", "GET", Firehose)
 }
 
-type HelloAPIController struct{
-	cheshire.APIController
+// a demo Ping controller function
+func Ping(request *strest.Request,conn strest.Connection) {
+        response := strest.NewResponse(request)
+        response.Put("data", "PONG")
+        conn.Write(response)
 }
 
-func (this *HelloAPIController)Get()func(){
-	return func(){
-		this.Write(this.NewSuccessJson("oh baby baby your a wildling"))
-	}
+// a demo Firehose controller
+func Firehose(request *strest.Request,conn strest.Connection) {
+    for i :=0; true; i++ {
+        response := strest.NewResponse(request)
+        response.Put("iteration", i)
+        response.Put("data", "This is a firehose, I never stop")
+        response.SetTxnStatus("continue") //set the status to continue so clients know to expect more responses
+        conn.Write(response)
+
+        time.Sleep(200 * time.Millisecond)            
+    }
 }
