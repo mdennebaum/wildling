@@ -35,5 +35,5 @@ Then you should be able to point your browser at http://localhost:8000/ and http
 
 ##More
 
-For more info on how to use the go cheshire framework checkout http://github.com/mdennebaum/cheshire. If there are any issues please submit an ticket. 
+For more info on how to use the go cheshire framework checkout https://github.com/trendrr/cheshire-golang. If there are any issues please submit an ticket. 
 
