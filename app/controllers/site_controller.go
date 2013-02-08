@@ -2,7 +2,6 @@ package controllers
 
 import(
 	"github.com/trendrr/cheshire-golang/cheshire"
-    "github.com/trendrr/cheshire-golang/strest"
 )
 
 
@@ -11,7 +10,7 @@ func init(){
 }
 
 //an example html page
-func Index(request *strest.Request, conn *cheshire.HtmlConnection) {
+func Index(request *cheshire.Request, conn *cheshire.HtmlConnection) {
     //create a context map to be passed to the template
     context := make(map[string]interface{}) 
     context["content"] = "Welcome to the wild(ing)!"
