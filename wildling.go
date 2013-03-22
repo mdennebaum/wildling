@@ -3,7 +3,7 @@ import (
 	"log"
 	"github.com/trendrr/cheshire-golang/cheshire"
 	"flag"
-	"./app/controllers" //this should probably be full path
+	"github.com/mdennebaum/wildling/app/controllers"
 )
 
 func init(){
