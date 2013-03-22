@@ -1,7 +1,7 @@
 package controllers
 
 import(
-	"github.com/trendrr/cheshire-golang/cheshire"   
+    "github.com/trendrr/cheshire-golang/cheshire"   
     "time"
 )
 
@@ -14,7 +14,7 @@ func init(){
 
 // a demo Ping controller function
 func Ping(request *cheshire.Request,conn cheshire.Connection) {
-        response := cheshire.NewResponse(request)
+        response := cheshire.NewResponse()
         response.Put("data", "PONG")
         conn.Write(response)
 }
@@ -22,7 +22,7 @@ func Ping(request *cheshire.Request,conn cheshire.Connection) {
 // a demo Firehose controller
 func Firehose(request *cheshire.Request,conn cheshire.Connection) {
     for i :=0; true; i++ {
-        response := cheshire.NewResponse(request)
+        response := cheshire.NewResponse()
         response.Put("iteration", i)
         response.Put("data", "This is a firehose, I never stop")
         response.SetTxnStatus("continue") //set the status to continue so clients know to expect more responses
