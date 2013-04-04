@@ -5,13 +5,12 @@ This is a starter app for the go cheshire web framework. You can use this as a b
 To get started make sure you have the following installed
 
 ```
-go get github.com/bradfitz/gomemcache/memcache
 go get github.com/kylelemons/go-gypsy/yaml
 go get github.com/hoisie/mustache
+go get code.google.com/p/go.net/websocket
 go get github.com/trendrr/cheshire-golang
+go get github.com/mdennebaum/wildling
 ```
-
-Then clone/download a copy of the repo
 
 ##Config
 
