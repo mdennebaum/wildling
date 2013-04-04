@@ -1,16 +1,17 @@
 package main
+
 import (
-	"log"
-	"github.com/trendrr/cheshire-golang/cheshire"
 	"flag"
 	"github.com/mdennebaum/wildling/app/controllers"
+	"github.com/trendrr/cheshire-golang/cheshire"
+	"log"
 )
 
-func init(){
+func init() {
 	flag.StringVar(&config, "config", "config/config.yaml", "path to the app config.yaml")
 }
 
-var config string 
+var config string
 
 func main() {
 
@@ -21,12 +22,12 @@ func main() {
 
 	//make sure the linker includes our controllers and runs inits
 	//this is mandatory
-	controllers.Load()  
-	
+	controllers.Load()
+
 	//tell everyone we started up
-	log.Println("starting app with config="+config)
+	log.Println("starting app with config=" + config)
 
 	log.Println("Starting")
-    //starts listening on all configured interfaces
-    bootstrap.Start()
+	//starts listening on all configured interfaces
+	bootstrap.Start()
 }
