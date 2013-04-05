@@ -15,5 +15,5 @@ func Index(request *cheshire.Request, conn *cheshire.HtmlConnection) {
 	context["content"] = "Welcome to the wild(ing)!"
 
 	//TODO: need to use index.html
-	conn.Render("/layouts/base.html", context)
+	conn.RenderInLayout("/public/index.html", "/layouts/base.html", context)
 }
