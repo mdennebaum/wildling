@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	//Use the relative import path here so project skeleton works ootb. 
+	//Use the relative import path here so project skeleton works ootb.
 	//users should change this to the appropriate absolute path, since relative imports
 	//are not part of the golang spec
 	"./controllers"
@@ -30,7 +30,6 @@ func main() {
 	//tell everyone we started up
 	log.Println("starting app with config=" + config)
 
-	log.Println("Starting")
 	//starts listening on all configured interfaces
 	bootstrap.Start()
 }

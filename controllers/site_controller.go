@@ -5,7 +5,7 @@ import (
 )
 
 func init() {
-	cheshire.RegisterHtml("/index", "GET", Index)
+	cheshire.RegisterHtml("/", "GET", Index)
 }
 
 //an example html page
