@@ -9,8 +9,9 @@ go get github.com/kylelemons/go-gypsy/yaml
 go get github.com/hoisie/mustache
 go get code.google.com/p/go.net/websocket
 go get github.com/trendrr/cheshire-golang
-go get github.com/mdennebaum/wildling
 ```
+
+Checkout or download this project to a directory in your gopath.
 
 ##Config
 
