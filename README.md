@@ -11,7 +11,7 @@ go get code.google.com/p/go.net/websocket
 go get github.com/trendrr/cheshire-golang
 ```
 
-Checkout or download this project to a directory in your gopath.
+Checkout or download wildling to a directory in your gopath.
 
 ##Config
 
