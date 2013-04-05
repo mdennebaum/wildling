@@ -2,7 +2,10 @@ package main
 
 import (
 	"flag"
-	"github.com/mdennebaum/wildling/app/controllers"
+	//Use the relative import path here so project skeleton works ootb. 
+	//users should change this to the appropriate absolute path, since relative imports
+	//are not part of the golang spec
+	"./controllers"
 	"github.com/trendrr/cheshire-golang/cheshire"
 	"log"
 )
