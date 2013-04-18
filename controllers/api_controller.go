@@ -13,20 +13,20 @@ func init() {
 }
 
 // a demo Ping controller function
-func Ping(request *cheshire.Request, conn cheshire.Connection) {
-	response := request.NewResponse()
+func Ping(txn *cheshire.Txn) {
+	response := cheshire.NewResponse(txn)
 	response.Put("data", "PONG")
-	conn.Write(response)
+	txn.Write(response)
 }
 
 // a demo Firehose controller
-func Firehose(request *cheshire.Request, conn cheshire.Connection) {
+func Firehose(txn *cheshire.Txn) {
 	for i := 0; true; i++ {
-		response := request.NewResponse()
+		response := cheshire.NewResponse(txn)
 		response.Put("iteration", i)
 		response.Put("data", "This is a firehose, I never stop")
 		response.SetTxnStatus("continue") //set the status to continue so clients know to expect more responses
-		conn.Write(response)
+		txn.Write(response)
 
 		time.Sleep(200 * time.Millisecond)
 	}
