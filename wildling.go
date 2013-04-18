@@ -7,6 +7,9 @@ import (
 	//are not part of the golang spec
 	"./controllers"
 	"github.com/trendrr/cheshire-golang/cheshire"
+
+    "github.com/trendrr/cheshire-golang/cheshire/impl/gocache"
+    
 	"log"
 )
 
