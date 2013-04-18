@@ -40,6 +40,12 @@
     </div>
   </div>
 	<div role="main">
+        {{#flash}}
+            <div class="alert alert-{{severity}}">
+                <a class="close" data-dismiss="alert">×</a>
+                {{message}}
+            </div>
+        {{/flash}}
 		{{{content}}}
 	</div>
 	<footer>

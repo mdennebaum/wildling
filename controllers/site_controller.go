@@ -15,5 +15,6 @@ func Index(txn *cheshire.Txn) {
 	context["content"] = "Welcome to the wild(ing)!"
 
 	//Render index template in layout
+    cheshire.Flash(txn, "success", "this is a flash message!")
 	cheshire.RenderInLayout(txn, "/public/index.html", "/layouts/base.html", context)
 }
