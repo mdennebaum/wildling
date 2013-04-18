@@ -14,6 +14,6 @@ func Index(txn *cheshire.Txn) {
 	context := make(map[string]interface{})
 	context["content"] = "Welcome to the wild(ing)!"
 
-	//TODO: need to use index.html
+	//Render index template in layout
 	cheshire.RenderInLayout(txn, "/public/index.html", "/layouts/base.html", context)
 }
