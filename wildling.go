@@ -7,6 +7,9 @@ import (
 	//are not part of the golang spec
 	"./controllers"
 	"github.com/trendrr/cheshire-golang/cheshire"
+
+    "github.com/trendrr/cheshire-golang/cheshire/impl/gocache"
+    
 	"log"
 )
 
@@ -22,6 +25,12 @@ func main() {
 	flag.Parse()
 
 	bootstrap := cheshire.NewBootstrapFile(config)
+
+	//Setup our cache.  this uses the local cache 
+    //you will need 
+    //github.com/pmylund/go-cache
+    cache := gocache.New(10, 10)
+    bootstrap.AddFilters(cheshire.NewSession(cache, 3600))
 
 	//make sure the linker includes our controllers and runs inits
 	//this is mandatory
