@@ -1,4 +1,4 @@
-This is a starter app for the [go cheshire](https://github.com/trendrr/cheshire-golang) web framework. You can use this as a boilerplate when starting a new cheshire project. 
+This is a starter app for the [goshire](https://github.com/trendrr/goshire) web framework. You can use this as a boilerplate when starting a new goshire project. 
 
 ##Install
 
@@ -8,7 +8,7 @@ To get started make sure you have the following installed
 go get github.com/kylelemons/go-gypsy/yaml
 go get github.com/hoisie/mustache
 go get code.google.com/p/go.net/websocket
-go get github.com/trendrr/cheshire-golang
+go get github.com/trendrr/goshire
 ```
 
 Checkout or download wildling to a directory in your gopath.
@@ -35,5 +35,5 @@ Then you should be able to point your browser at http://localhost:8000/ and http
 
 ##More
 
-For more info on how to use the go cheshire framework checkout https://github.com/trendrr/cheshire-golang. If there are any issues please submit an ticket. 
+For more info on how to use the goshire framework checkout https://github.com/trendrr/goshire. If there are any issues please submit an ticket. 
 
