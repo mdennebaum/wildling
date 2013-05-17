@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/trendrr/cheshire-golang/cheshire"
+	"github.com/trendrr/goshire/cheshire"
     "log"
 )
 
